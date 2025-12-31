@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>С Новым Годом! 🎄</title>
+    <title>С Новым Годом!</title>
     
-    <!-- Google Fonts -->
+    
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <style>
-        /* ==================== CSS ПЕРЕМЕННЫЕ (легко менять цвета) ==================== */
+        
         :root {
             --primary-color: #c41e3a;
             --secondary-color: #2d5f3f;
@@ -20,7 +20,7 @@
             --warm-light: #fff4e6;
         }
         
-        /* ==================== БАЗОВЫЕ СТИЛИ ==================== */
+        
         * {
             margin: 0;
             padding: 0;
@@ -36,7 +36,7 @@
             color: var(--snow-white);
         }
         
-        /* ==================== КОНТЕЙНЕР СЛАЙДОВ ==================== */
+        
         .slides-container {
             scroll-snap-type: y mandatory;
             overflow-y: scroll;
@@ -58,7 +58,7 @@
             padding: 2rem;
         }
         
-        /* ==================== СЛАЙД 1: НОВОГОДНЕЕ ПРИВЕТСТВИЕ ==================== */
+        
         #slide1 {
             background: linear-gradient(135deg, #1a2a4e 0%, #0a1628 50%, #2d1b4e 100%);
             overflow: hidden;
@@ -93,7 +93,7 @@
             animation: fadeIn 2s ease-out 1s forwards;
         }
         
-        /* Падающий снег */
+        
         .snowflake {
             position: absolute;
             top: -10px;
@@ -139,7 +139,7 @@
             }
         }
         
-        /* Гирлянды */
+       
         .lights {
             position: absolute;
             top: 0;
@@ -171,8 +171,9 @@
             50% { opacity: 0.3; box-shadow: none; }
         }
         
-        /* ==================== СЛАЙД 2: МЕМЫ ==================== */
+    
         #slide2 {
+                align-items: flex-start;
             background: linear-gradient(to bottom, #2d1b4e 0%, #1a2a4e 100%);
         }
         
@@ -186,7 +187,7 @@
             
             font-size: clamp(2rem, 6vw, 4rem);
             color: var(--gold-color);
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
             animation: slideInLeft 1s ease-out;
         }
         
@@ -231,7 +232,7 @@
             margin-bottom: 1rem;
         }
         
-        /* ЗАМЕНИ ТЕКСТ НИЖЕ НА СВОИ ШУТКИ/ПОДПИСИ */
+      
         .meme-text {
             font-size: 1.2rem;
             color: var(--warm-light);
@@ -249,7 +250,9 @@
             }
         }
         
-        
+        #slide3 {
+            align-items: flex-start;
+        }
          #slide5 {
             background: linear-gradient(135deg, #2d1b4e 0%, #1a2a4e 50%, #0a1628 100%);
         }
@@ -280,7 +283,7 @@
             background: rgba(255, 255, 255, 0.05);
             border: 3px solid var(--gold-color);
             border-radius: 20px;
-            padding: 3rem 2rem;
+            padding: 2rem 2rem;
             backdrop-filter: blur(10px);
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             animation: fadeInScale 1.2s ease-out;
@@ -473,7 +476,7 @@
             50% { opacity: 1; }
         }
         
-        /* ==================== НАВИГАЦИОННЫЕ ТОЧКИ ==================== */
+      
         .navigation {
             position: fixed;
             right: 2rem;
@@ -506,7 +509,7 @@
             transform: scale(1.5);
         }
         
-        /* ==================== АДАПТИВНОСТЬ ==================== */
+   
         @media (max-width: 768px) {
             .slide {
                 padding: 1rem;
@@ -536,7 +539,7 @@
     </style>
 </head>
 <body>
-    <!-- Навигационные точки -->
+  
     <div class="navigation">
         <div class="nav-dot active" data-slide="0"></div>
         <div class="nav-dot" data-slide="1"></div>
@@ -545,9 +548,9 @@
     </div>
 
     <div class="slides-container">
-        <!-- ==================== СЛАЙД 1: НОВОГОДНЕЕ ПРИВЕТСТВИЕ ==================== -->
+       
         <section id="slide1" class="slide">
-            <!-- Гирлянды -->
+           
             <div class="lights">
                 <div class="light"></div>
                 <div class="light"></div>
@@ -569,34 +572,29 @@
      
         <section id="slide2" class="slide">
             <div class="memes-content">
-                <!-- ЗАМЕНИ ЗАГОЛОВОК -->
-                <h2 class="memes-title">Смехуятинки</h2>
+              
+                
                 
                 <div class="memes-grid">
                     <div class="meme-card">
-                        <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ: добавь <img src="твоя-картинка.jpg"> -->
+                      
                         <div class="meme-placeholder">
                             <img src="images/image2.png" alt="">
                         </div>
-                        <!-- ЗАМЕНИ ТЕКСТ -->
+                     
                         <p class="meme-text">Моя первая фраза</p>
-                    </div>
-                    
-                    <div class="meme-card">
-                        <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    </div>               
+                    <div class="meme-card">            
                         <div class="meme-placeholder">
                             <img src="images/Снимок экрана 2025-12-30 183538.png" alt="">
                         </div>
-                        <!-- ЗАМЕНИ ТЕКСТ -->
                         <p class="meme-text">Твой ответ на мою фразу</p>
                     </div>
                     
                     <div class="meme-card">
-                        <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
                         <div class="meme-placeholder">
                             <img src="images\image.png" alt="">
                         </div>
-                        <!-- ЗАМЕНИ ТЕКСТ -->
                         <p class="meme-text">Моя любимая фотка</p>
                     </div>
                 </div>
@@ -609,10 +607,8 @@
 
        <section id="slide3" class="slide">
             <div class="timer-content">
-                <!-- ЗАМЕНИ ЗАГОЛОВОК -->
                 <h2 class="timer-title">Вот стока мы общаемся</h2>
-                <!-- ЗАМЕНИ ПОДЗАГОЛОВОК -->
-                <p class="timer-subtitle">А точнее на протяжении</p>
+            
                 
                 <div class="timer-display">
                    
@@ -642,36 +638,32 @@
         </section>
  <section id="slide6" class="slide">
             <div class="card-content">
-                <!-- ЗАМЕНИ ЗАГОЛОВОК -->
                 <h2 class="card-title">Я тебя очень люблю мой котёночекк</h2>
                 
                 <div class="greeting-card" id="greetingCard">
                     <div class="card-inner">
-                        <!-- Лицевая сторона -->
                         <div class="card-front">
                             <div class="card-front-decoration">🎁</div>
-                            <!-- ЗАМЕНИ ТЕКСТ НА ОТКРЫТКЕ -->
                             <p class="card-front-text">Открой миня!!!</p>
                             <p class="card-click-hint">Нажми на открыточку</p>
                         </div>
                         
-                        <!-- Обратная сторона с письмом -->
+
                         <div class="card-back">
                             <div class="letter-content">
-                                <!-- ЗАМЕНИ ЗАГОЛОВОК ПИСЬМА -->
+                    
                                 <h3 class="letter-header">Моё новогоднее пожелание</h3>
-                                
-                                <!-- ЗАМЕНИ ТЕКСТ ПИСЬМА / СТИХ -->
+                         
                                 <div class="letter-body">
-                                    <p>Моя любимая аришенька,</p>
-                                    <p>С Новым годом, мое самое большое и единственное счастье на всём белом свете!</p>
-                                    <p>Пусть каждый день с тобой будет наполнен теплом, светом и радостью. Ты делаешь мою жизнь особенной, и я благодарен за каждый момент рядом с тобой.</p>
-                                    <p>Пусть этот год принесёт нам новые приключения, смех до слёз, объятия в холодные вечера и бесконечное количество поводов говорить друг другу "Я люблю тебя".</p>
-                                    <p>Спасибо, что ты есть. С тобой любой год — самый лучший!</p>
+                                    <p>Моя любимая аришенька</p>
+                                    <p>С Новым годом мое самое большое и единственное счастье на всём белом свете!</p>
+                                    <p>Пусть каждый день с тобой будет наполнен теплом светом и радостью. Ты делаешь мою жизнь особенной и я благодарен всему что решает нашу судьбу что я встретил именно тебя.</p>
+                                    <p>В этом году мы познакомимся вновь по новой,мы проживём самую счастливую жизнь о которой даже мечтать не смели. смех до слёз объятия в покое и радости и бесконечное количество поводов говорить друг другу я тибя очинь люблю.</p>
+                                    <p>Спасибо что ты есть. С тобой любой год это рай на земле!</p>
                                 </div>
                                 
-                                <!-- ЗАМЕНИ ПОДПИСЬ -->
-                                <p class="letter-signature">Твой/Твоя ❤️</p>
+                      
+                                <p class="letter-signature">Твой самый любимый</p>
                             </div>
 
                             </div>
@@ -688,27 +680,25 @@
             const startDate = new Date('2025-11-03T17:47:00');
             const now = new Date();
             
-            // Разница в миллисекундах
+           
             const diff = now - startDate;
-            
-            // Вычисляем дни, часы, минуты, секунды
+        
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));
             const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            
-            // Обновляем значения на странице
+           
             document.getElementById('days').textContent = days;
             document.getElementById('hours').textContent = hours;
             document.getElementById('minutes').textContent = minutes;
             document.getElementById('seconds').textContent = seconds;
         }
         
-        // Обновляем таймер каждую секунду
+        
         setInterval(updateTimer, 1000);
-        // Сразу показываем первое значение
+      
         updateTimer();
-        // ==================== ПАДАЮЩИЙ СНЕГ ====================
+        
         function createSnowflakes() {
             const snowflakeCount = 50;
             const slide1 = document.getElementById('slide1');
@@ -725,7 +715,7 @@
             }
         }
         
-        // ==================== ЗВЁЗДЫ НА ФОНЕ ====================
+       
         function createStars() {
             const starCount = 100;
             const slide3 = document.getElementById('slide3');
@@ -741,19 +731,19 @@
             }
         }
         
-        // ==================== ОТКРЫТКА (клик для открытия) ====================
+       
         const greetingCard = document.getElementById('greetingCard');
         
         greetingCard.addEventListener('click', function() {
             this.classList.toggle('opened');
         });
         
-        // ==================== НАВИГАЦИЯ ПО СЛАЙДАМ ====================
+      
         const navDots = document.querySelectorAll('.nav-dot');
         const slidesContainer = document.querySelector('.slides-container');
         const slides = document.querySelectorAll('.slide');
         
-        // Клик по навигационным точкам
+    
         navDots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 slides[index].scrollIntoView({ behavior: 'smooth' });
@@ -775,9 +765,9 @@
             });
         }, observerOptions);
         
-        slides.forEach(slide => observer.observe(slide));
+        slides.forEach(slide => observer.observe(slide));   
         
-        // ==================== ИНИЦИАЛИЗАЦИЯ ====================
+      
         createSnowflakes();
         createStars();
     </script>
